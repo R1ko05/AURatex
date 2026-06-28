@@ -70,8 +70,8 @@ export default function Home() {
   ]
 
   const stats = [
-    { value: '40+', label: 'Проектов сдано' },
-    { value: '3', label: 'Года опыта' },
+    { value: '6+', label: 'Проектов сдано' },
+    { value: '1.5', label: 'Года опыта' },
     { value: '100%', label: 'Довольных клиентов' },
     { value: '24/7', label: 'Поддержка' },
   ]
