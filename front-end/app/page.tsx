@@ -86,7 +86,7 @@ export default function Home() {
   return (
       <div className="min-h-screen bg-[#030712] text-white overflow-hidden">
 
-        <section className="relative min-h-screen flex items-center justify-center px-4 pt-36">
+        <section className="relative min-h-screen flex items-center justify-center px-4 pt-40">
           <div className="absolute inset-0"
                style={{
                  backgroundImage: `linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),

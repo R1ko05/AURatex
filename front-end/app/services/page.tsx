@@ -110,7 +110,6 @@ export default function Services() {
   return (
       <div className="min-h-screen bg-[#030712] text-white overflow-hidden">
 
-        {/* Сетка фона */}
         <div
             className="fixed inset-0 pointer-events-none z-0"
             style={{
@@ -119,8 +118,7 @@ export default function Services() {
             }}
         />
 
-        {/* ─── HERO ─────────────────────────────────────────────── */}
-        <section className="relative z-10 py-20 pt-16 px-6">
+        <section className="relative z-10 pt-40 pb-20 px-6">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-600/8 rounded-full blur-[120px] pointer-events-none" />
 
           {[

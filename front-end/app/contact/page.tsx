@@ -97,7 +97,6 @@ export default function Contact() {
   return (
       <div className="min-h-screen bg-[#030712] text-white overflow-hidden">
 
-        {/* Grid bg */}
         <div className="fixed inset-0 pointer-events-none z-0"
              style={{
                backgroundImage: `linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
@@ -106,11 +105,9 @@ export default function Contact() {
              }}
         />
 
-        {/* ── HERO ── */}
-        <section className="relative z-10 pt-36 pb-16 px-6">
+        <section className="relative z-10 pt-40 pb-20 px-6">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-600/8 rounded-full blur-[120px] pointer-events-none" />
 
-          {/* Particles */}
           {[
             { top: '15%', left: '5%', size: 3, dur: 8 },
             { top: '70%', left: '3%', size: 5, dur: 11 },

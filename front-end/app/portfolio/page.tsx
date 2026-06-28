@@ -154,8 +154,7 @@ export default function Portfolio() {
     return (
         <div className="min-h-screen bg-[#030712] text-white overflow-hidden">
 
-            {/* ─── HERO ─────────────────────────────────────────────── */}
-            <section className="relative py-20 pt-16 px-4">
+            <section className="relative pt-40 pb-20  px-4">
                 <div
                     className="absolute inset-0 pointer-events-none"
                     style={{
