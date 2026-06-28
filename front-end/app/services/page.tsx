@@ -109,7 +109,6 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-blue-600/5 to-black">
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -129,7 +128,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Services Grid */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -162,7 +160,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Process Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-black to-blue-600/5">
         <div className="max-w-7xl mx-auto">
           <motion.div

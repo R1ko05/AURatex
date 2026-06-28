@@ -28,7 +28,6 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-black text-white">
       <section className="relative py-20 px-4">
-        {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={{
@@ -149,16 +148,6 @@ export default function Contact() {
                       >
                         +7 (900) 123-45-67
                       </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0 border border-blue-600/30">
-                      <MapPin className="text-blue-600" size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-black text-white mb-1">ОФИС</h3>
-                      <p className="text-gray-500">Москва, Россия</p>
                     </div>
                   </div>
                 </div>
