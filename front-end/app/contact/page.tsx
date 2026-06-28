@@ -107,7 +107,7 @@ export default function Contact() {
         />
 
         {/* ── HERO ── */}
-        <section className="relative z-10 pt-32 pb-16 px-6">
+        <section className="relative z-10 pt-36 pb-16 px-6">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-blue-600/8 rounded-full blur-[120px] pointer-events-none" />
 
           {/* Particles */}
