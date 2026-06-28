@@ -13,7 +13,7 @@ type Project = {
     tags: string[]
     liveUrl: string
     githubUrl: string
-    image?: string // путь к картинке, например '/images/getgrant.png'
+    image?: string
     accent: string
 }
 
@@ -90,7 +90,6 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1e]/80 via-transparent to-transparent" />
                 </div>
 
-                {/* Content */}
                 <div className="relative z-10 p-6 flex flex-col">
                     <div className="mb-4">
                         <p className="text-[10px] font-black tracking-[0.2em] text-blue-400/70 uppercase mb-1">
@@ -101,7 +100,6 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
 
                     <p className="text-gray-400 text-sm mb-5 leading-relaxed">{project.description}</p>
 
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2 mb-5">
                         {project.tags.map((tag) => (
                             <span
@@ -113,7 +111,6 @@ function ProjectCard({ project, index, onClick }: { project: Project; index: num
                         ))}
                     </div>
 
-                    {/* Footer links */}
                     <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
                         <div className="flex items-center gap-2 text-blue-400 text-sm font-bold group-hover:gap-3 transition-all duration-200">
                             Подробнее
@@ -164,11 +161,9 @@ export default function Portfolio() {
                     }}
                 />
 
-                {/* Glow blobs */}
                 <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[500px] h-[400px] bg-blue-600/8 rounded-full blur-[120px] pointer-events-none" />
                 <div className="absolute top-1/4 left-1/4 w-[200px] h-[200px] bg-indigo-600/6 rounded-full blur-[80px] pointer-events-none" />
 
-                {/* Floating particles */}
                 {[
                     { top: '15%', left: '10%', size: 3, dur: 9, delay: 0 },
                     { top: '70%', left: '5%', size: 5, dur: 13, delay: 1 },
@@ -272,7 +267,6 @@ export default function Portfolio() {
                 </motion.div>
             </section>
 
-            {/* ─── PROJECT MODAL ────────────────────────────────────── */}
             <AnimatePresence>
                 {selectedProject && (
                     <motion.div
@@ -299,7 +293,6 @@ export default function Portfolio() {
                                 <X className="w-5 h-5" />
                             </button>
 
-                            {/* Modal image */}
                             <div className="relative w-full h-56 bg-[#0d1117] overflow-hidden rounded-t-2xl border-b border-blue-600/15">
                                 {selectedProject.image ? (
                                     <img
@@ -318,7 +311,6 @@ export default function Portfolio() {
                             </div>
 
                             <div className="p-8">
-                                {/* Header */}
                                 <div className="mb-6">
                                     <p className="text-[10px] font-black tracking-widest text-blue-500 uppercase mb-1">
                                         {selectedProject.subtitle}
@@ -336,13 +328,11 @@ export default function Portfolio() {
                                     </div>
                                 </div>
 
-                                {/* Description */}
                                 <div className="border-l-2 border-blue-600/30 pl-5 mb-8">
                                     <h3 className="text-xs font-black tracking-widest text-blue-500 uppercase mb-2">О проекте</h3>
                                     <p className="text-gray-300 leading-relaxed text-sm">{selectedProject.fullDescription}</p>
                                 </div>
 
-                                {/* Links */}
                                 <div className="flex gap-4 pt-6 border-t border-white/5">
                                     <a
                                         href={selectedProject.liveUrl}

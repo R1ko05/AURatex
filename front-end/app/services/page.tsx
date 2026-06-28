@@ -116,7 +116,6 @@ export default function Services() {
   return (
       <div className="min-h-screen bg-[#030712] text-white overflow-hidden">
 
-        {/* Grid bg */}
         <div className="fixed inset-0 pointer-events-none z-0"
              style={{
                backgroundImage: `linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
@@ -125,11 +124,9 @@ export default function Services() {
              }}
         />
 
-        {/* ── HERO ── */}
-        <section ref={heroRef} className="relative z-10 min-h-[70vh] flex items-center px-6 pt-28 pb-20 overflow-hidden">
+        <section ref={heroRef} className="relative z-10 min-h-[70vh] flex items-center px-6 pt-40 pb-20 overflow-hidden">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-blue-600/8 rounded-full blur-[130px] pointer-events-none" />
 
-          {/* Floating particles */}
           {[
             { top: '20%', left: '8%', size: 3, dur: 9, delay: 0 },
             { top: '65%', left: '4%', size: 5, dur: 12, delay: 1 },
@@ -145,7 +142,6 @@ export default function Services() {
               />
           ))}
 
-          {/* Rotating decorative rings */}
           <motion.div animate={{ rotate: 360 }} transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
                       className="absolute right-10 top-20 w-40 h-40 border border-blue-600/8 rounded-full pointer-events-none hidden lg:block" />
           <motion.div animate={{ rotate: -360 }} transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
@@ -167,7 +163,7 @@ export default function Services() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
-                  className="text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight"
+                  className="text-4xl sm:text-5xl md:text-6xl font-black leading-none tracking-tight"
               >
                 <span className="text-white">НАШИ </span>
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">УСЛУГИ</span>
@@ -184,7 +180,6 @@ export default function Services() {
               </motion.p>
             </div>
 
-            {/* Perks row */}
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -208,7 +203,6 @@ export default function Services() {
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-600/20 to-transparent" />
 
-        {/* ── УСЛУГИ ── */}
         <section className="relative z-10 py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -245,10 +239,8 @@ export default function Services() {
                         className="relative h-full rounded-2xl p-7 transition-all duration-300 overflow-hidden border border-white/[0.07] bg-white/[0.03]"
                         style={{ '--accent': s.accent } as React.CSSProperties}
                     >
-                      {/* Hover glow */}
                       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"
                            style={{ background: `radial-gradient(circle at 30% 30%, ${s.accent}18, transparent 60%)` }} />
-                      {/* Hover border */}
                       <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-white/10 transition-all duration-300" />
 
                       <div className="relative z-10">
@@ -284,7 +276,6 @@ export default function Services() {
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-600/20 to-transparent" />
 
-        {/* ── ПРОЦЕСС ── */}
         <section className="relative z-10 py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -306,9 +297,7 @@ export default function Services() {
               </p>
             </motion.div>
 
-            {/* Timeline style */}
             <div className="relative">
-              {/* Vertical line on desktop */}
               <div className="absolute left-[calc(50%-0.5px)] top-0 bottom-0 w-px bg-gradient-to-b from-blue-600/30 via-blue-600/10 to-transparent hidden lg:block" />
 
               <div className="grid lg:grid-cols-2 gap-5">
@@ -342,7 +331,6 @@ export default function Services() {
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-600/20 to-transparent" />
 
-        {/* ── ПРАЙС ── */}
         <section className="relative z-10 py-24 px-6">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-blue-600/6 rounded-full blur-[120px] pointer-events-none" />
 
@@ -448,7 +436,6 @@ export default function Services() {
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-600/20 to-transparent" />
 
-        {/* ── CTA ── */}
         <section className="relative z-10 py-24 px-6">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] bg-blue-600/7 rounded-full blur-[100px] pointer-events-none" />
 
@@ -459,7 +446,6 @@ export default function Services() {
               viewport={{ once: true }}
               className="relative max-w-3xl mx-auto"
           >
-            {/* Card */}
             <div className="relative rounded-3xl border border-blue-500/20 bg-white/[0.02] p-12 md:p-16 text-center overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-b from-blue-600/5 to-transparent pointer-events-none" />
               <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />

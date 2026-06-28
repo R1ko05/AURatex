@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, Phone, Send, MessageCircle, X, Check, Clock, Loader2 } from 'lucide-react'
 import { useState } from 'react'
 
-// ← Замени на свои данные
 const TELEGRAM_USERNAME = 'auratex_support' // без @
 const CONTACT_EMAIL = 'info@auratex.com'
 
@@ -87,10 +86,10 @@ export default function Contact() {
   }
 
   const budgets = [
-    'До 100 000 ₸',
-    '100 000 – 300 000 ₸',
-    '300 000 – 700 000 ₸',
-    'от 700 000 ₸',
+    'До 10 000 с',
+    '10 000 – 30 000 с',
+    '30 000 – 40 000 с',
+    'от 40 000 с',
     'Обсудим',
   ]
 
@@ -158,18 +157,15 @@ export default function Contact() {
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-600/20 to-transparent" />
 
-        {/* ── MAIN CONTENT ── */}
         <section className="relative z-10 py-20 px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-5 gap-10">
 
-            {/* Left — info */}
             <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="lg:col-span-2 space-y-5"
             >
-              {/* Contact cards */}
               {[
                 {
                   icon: MessageCircle,
@@ -190,8 +186,8 @@ export default function Contact() {
                 {
                   icon: Phone,
                   label: 'Телефон',
-                  value: '+7 (900) 123-45-67',
-                  href: 'tel:+79001234567',
+                  value: '+996 (709) 882-696',
+                  href: 'tel:+996709882696',
                   accent: '#0ea5e9',
                   hint: 'Пн–Пт, 10:00–19:00',
                 },
@@ -218,7 +214,6 @@ export default function Contact() {
                   </motion.a>
               ))}
 
-              {/* Working hours */}
               <div className="p-5 rounded-2xl bg-white/[0.03] border border-white/[0.07]">
                 <div className="flex items-center gap-2 mb-4">
                   <Clock className="w-4 h-4 text-blue-400" />
@@ -241,7 +236,6 @@ export default function Contact() {
               </div>
             </motion.div>
 
-            {/* Right — form */}
             <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -322,7 +316,6 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* ── MODAL ── */}
         <AnimatePresence>
           {showModal && (
               <motion.div
@@ -339,10 +332,8 @@ export default function Contact() {
                     transition={{ type: 'spring', damping: 25, stiffness: 300 }}
                     className="relative w-full max-w-md rounded-2xl bg-[#080f20] border border-blue-500/20 overflow-hidden"
                 >
-                  {/* Top glow */}
                   <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
 
-                  {/* Close */}
                   {modalStep !== 'sending' && (
                       <button onClick={closeModal}
                               className="absolute top-4 right-4 w-8 h-8 rounded-lg bg-white/5 hover:bg-red-500/20 hover:text-red-400 text-gray-500 flex items-center justify-center transition-all">
@@ -350,7 +341,6 @@ export default function Contact() {
                       </button>
                   )}
 
-                  {/* ── CHOOSE ── */}
                   {modalStep === 'choose' && (
                       <div className="p-8">
                         <div className="mb-6">
@@ -360,7 +350,6 @@ export default function Contact() {
                         </div>
 
                         <div className="space-y-3">
-                          {/* Telegram option */}
                           <motion.button
                               whileHover={{ x: 4 }}
                               whileTap={{ scale: 0.98 }}
@@ -380,7 +369,6 @@ export default function Contact() {
                             </div>
                           </motion.button>
 
-                          {/* Email option */}
                           <motion.button
                               whileHover={{ x: 4 }}
                               whileTap={{ scale: 0.98 }}
@@ -404,7 +392,6 @@ export default function Contact() {
                       </div>
                   )}
 
-                  {/* ── SENDING ── */}
                   {modalStep === 'sending' && (
                       <div className="p-8 text-center">
                         <div className="w-16 h-16 rounded-2xl mx-auto mb-5 flex items-center justify-center"
@@ -416,7 +403,6 @@ export default function Contact() {
                       </div>
                   )}
 
-                  {/* ── SUCCESS ── */}
                   {modalStep === 'success' && (
                       <div className="p-8 text-center">
                         <motion.div
