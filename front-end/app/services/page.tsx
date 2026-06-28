@@ -153,7 +153,7 @@ export default function Services() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-6xl sm:text-7xl md:text-8xl font-black mb-6 leading-none tracking-tight"
+                className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-none tracking-tight"
             >
               <span className="text-white">НАШИ </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">УСЛУГИ</span>
